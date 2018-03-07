@@ -22,10 +22,8 @@ public class Main {
 				String test = passwordField.getText();
 
 				if (get.equals(test)) {
-
 					label.setText("Confirmed");
 					label3.setText("");	
-
 					Timer timer = new Timer(2000, new ActionListener() {
 	                    @Override
 	                    public void actionPerformed(ActionEvent e) {
@@ -33,19 +31,13 @@ public class Main {
 	                    }
 	                });
 	                timer.start();
-					
-
 				} else {
 					label3.setText("Invalid password");
 					label.setText("");
-
 				}
-
 			}
 		});
 
-		
-		
 		panel.add(passwordField);
 		passwordField.setBounds(5, 30, 70, 20);
 		panel.add(button);
