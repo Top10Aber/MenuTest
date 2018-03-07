@@ -50,8 +50,8 @@ public class Main {
 		label3.setBounds(30, 55, 100, 20);
 		frame.setSize(177, 120);
 		frame.setLocationRelativeTo(null);
-		//frame.setUndecorated(true);
-		//frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+		frame.setUndecorated(true);
+		frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		frame.getContentPane().add(panel);
 		frame.setVisible(true);
 				
