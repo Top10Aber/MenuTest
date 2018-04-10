@@ -1,10 +1,10 @@
 import java.awt.event.*;
 import javax.swing.*;
 
-public class Main {
+public class Test {
 
-	public static void main(String[] args) {
-
+	public static void assessMode() {
+		
 		JFrame frame = new JFrame();
 		JPanel panel = new JPanel();
 		panel.setLayout(null);
@@ -24,7 +24,7 @@ public class Main {
 				if (get.equals(test)) {
 					label.setText("Confirmed");
 					label3.setText("");	
-					Timer timer = new Timer(2000, new ActionListener() {
+					Timer timer = new Timer(1000, new ActionListener() {
 	                    @Override
 	                    public void actionPerformed(ActionEvent e) {
 	                        frame.dispose();
@@ -34,6 +34,7 @@ public class Main {
 				} else {
 					label3.setText("Invalid password");
 					label.setText("");
+					passwordField.setText("");
 				}
 			}
 		});
@@ -54,6 +55,12 @@ public class Main {
 		frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		frame.getContentPane().add(panel);
 		frame.setVisible(true);
+		
+	}
+	
+	public static void main(String[] args) {
+		assessMode();
+	}
+
 				
 	}
-}
